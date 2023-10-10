@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Compila tu proyecto Next.js
-RUN npx prisma db push
+RUN npx prisma generate
 
 RUN npm run build
 
