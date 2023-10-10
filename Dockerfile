@@ -14,6 +14,8 @@ RUN npm install
 COPY . .
 
 # Compila tu proyecto Next.js
+RUN npx prisma db push
+
 RUN npm run build
 
 # Expone el puerto en el que tu aplicación Next.js se ejecutará (por defecto es 3000)
