@@ -1,8 +1,8 @@
 # Usa la imagen de Node.js como base
-FROM node:20.8.0-alpine
+FROM node:18-alpine
 
 # Establece el directorio de trabajo dentro del contenedor
-WORKDIR /
+WORKDIR /app
 
 # Copia el package.json y package-lock.json al contenedor
 COPY package.json package-lock.json ./
