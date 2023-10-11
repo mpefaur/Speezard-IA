@@ -5,7 +5,7 @@ FROM node:20.8.0-alpine
 WORKDIR /
 
 # Copia el package.json y package-lock.json al contenedor
-COPY package*.json ./
+COPY package.json package-lock.json ./
 
 # Instala las dependencias
 RUN npm install
