@@ -4,6 +4,7 @@ import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
 import { Poppins } from "next/font/google";
 import { Sparkles } from "lucide-react";
+import { Logo } from "./logo"
 
 import { cn } from "@/lib/utils";
 import { MobileSidebar } from "@/components/mobile-sidebar";
@@ -26,9 +27,7 @@ export const Navbar = ({
       <div className="flex items-center">
         <MobileSidebar isPro={isPro} />
         <Link href="/">
-          <h1 className={cn("hidden md:block text-xl md:text-3xl font-bold text-primary", font.className)}>
-            Speezard-IA
-          </h1>
+          <Logo/>
         </Link>
       </div>
       <div className="flex items-center gap-x-3">
