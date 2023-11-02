@@ -24,12 +24,12 @@ export const checkSubscription = async () => {
   })
 
   if (!userSubscription) {
-    return false;
+    return true;
   }
 
-  const isValid =
-    userSubscription.stripePriceId &&
-    userSubscription.stripeCurrentPeriodEnd?.getTime()! + DAY_IN_MS > Date.now()
+  const isValid = true
+    // userSubscription.stripePriceId &&
+    // userSubscription.stripeCurrentPeriodEnd?.getTime()! + DAY_IN_MS > Date.now()
 
   return !!isValid;
 };

@@ -7,7 +7,7 @@ const RootLayout = async ({
 }: {
   children: React.ReactNode;
 }) => {
-  const isPro = false/* await checkSubscription() */;
+  const isPro = await checkSubscription();
 
   return ( 
     <div className="h-full">
